@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7em;
+}
+
+/* header css starts here */
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    z-index: 1;
+}
+
+.header .navbar a{
+    margin: 0 1rem;
+    font-size: 1.7rem;
+}
+
+.header .navbar .btn-sign-in {
+    border: rgb(2, 143, 150);
+    background-color: transparent;
+    border-radius: 4px;
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header .navbar .btn-sign-up {
+    border: orange;
+    background-color: orange;
+    border-radius: 4px;
+    height: 50px;
+    width: 100px;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header .navbar .btn-sign-up:hover {
+    border: rgb(246, 127, 1);
+    background-color: rgb(246, 127, 1);
+}
+/* header css ends here */
+
+
+/* hero css starts here */
+.hero .row{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+
+.hero .row .image{
+    width: 100%;
+    max-width: 42rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hero .row .image img{
+    width: 100%;
+}
+
+.hero .row .content{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 42rem;
+}
+
+.hero .row .content .title{
+    color: var(--main-color);
+    font-size: 5rem;
+    line-height: 1.2;
+}
+
+section{
+    padding: 10% 10%;
+}
+
+.hero .row .content p{
+    color: var(--main-color);
+    font-size: 2.0rem;
+    line-height: 1.8;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+
+.hero .row .content .btn-get-started{
+    margin: 2rem 0;
+    border: orange;
+    background-color: orange;
+    border-radius: 4px;
+    height: 50px;
+    width: 20rem;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.hero .row .content .btn-watch-the-video{
+    margin: 0 3rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: orange;
+    cursor: pointer;
+    height: 50px;
+    width: 20rem;
+    background-color: transparent;
+    border: none;
+}
+
+.hero .row .content .btn-watch-the-video:onClick{
+    color: orange;
+    cursor: pointer;
+    border: orange;
+}
+
+.hero .hero-bottom {
+    margin-top: 15rem;
+}
+
+.hero .hero-bottom h1{
+    text-align: center;
+    font-size: 5rem;
+}  
+
+.hero .hero-bottom .row .icon{
+    margin-left: -30px;
+}
+
+.hero .hero-bottom .row h3{
+    font-size: 20px;
+}
+
+.hero .hero-bottom .row p{
+    margin-top: 2rem;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.hero .hero-bottom .row{
+    margin-top: 10rem;
+} 
+
+.hero .hero-bottom .btn-sign-up-now button{
+    display: flex;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    border: orange;
+    background-color: orange;
+    border-radius: 4px;
+    height: 50px;
+    width: 17rem;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+/* hero css ends here */
+
+
+
+/* validation css starts here */
+.validation .row{  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: -10rem;
+}
+
+
+.validation .row .image{
+    width: 100%;
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+.validation .row .image img{
+    width: 100%;
+}
+
+.validation .row .content{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 42rem;
+}
+
+.validation .row .content .title{
+    font-size: 4rem;
+    line-height: 1.0;
+}
+
+section{
+    padding: 10% 10%;
+}
+
+.validation .row .content h2{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.validation .row .content p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+/* validation css ends here */
+
+
+/* product manager css starts here */
+.productmanagers .row{  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: -10rem;
+}
+
+
+.productmanagers .row .image{
+    width: 100%;
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+.productmanagers .row .image img{
+    width: 100%;
+}
+
+.productmanagers .row .content{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 42rem;
+}
+
+.productmanagers .row .content .bullet_one .bullet{
+    display: flex;
+}
+
+.productmanagers .row .content .bullet_one p{
+    display: flex;
+    margin-left: 70px;
+    margin-top: -50px;
+}
+
+.productmanagers .row .content .title{
+    font-size: 4rem;
+    line-height: 1.0;
+}
+
+section{
+    padding: 10% 10%;
+}
+
+.productmanagers .row .content p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+/* product manager css ends here */
+
+
+/* marketers css starts here */
+.marketers .row{  
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem,1fr));
+    gap: 1.5rem;
+    justify-content: center;
+    margin-top: -10rem;
+}
+
+
+.marketers .row .image{
+    width: 100%;
+    max-width: 42rem;
+    margin: 0 auto;
+}
+
+.marketers .row .image img{
+    width: 100%;
+}
+
+.marketers .row .content{
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 42rem;
+}
+
+.marketers .row .content .title{
+    font-size: 4rem;
+    line-height: 1.0;
+}
+
+section{
+    padding: 10% 10%;
+}
+
+.marketers .row .content h2{
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.marketers .row .content p{
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+}
+/* marketers css ends here */
+
+
+/* super hero css starts here */
+.pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .pricing::before {
+    content: "";
+    width: 250%;
+    height: 250%;
+    background-image: radial-gradient(transparent, #df69512c);
+    z-index: -1;
+    top: 0;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  
+  .pricing h1 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  
+  .pricing p {
+    font-size: 1.6rem;
+    text-align: center;
+    width: 65%;
+    color: rgb(1, 120, 147);
+    font-weight: 500;
+  }
+
+  .pricing button{
+    border: orange;
+    background-color: orange;
+    border-radius: 4px;
+    height: 50px;
+    width: 20rem;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+/* super hero css ends here */
+
+
+
+/* resources css starts here */
+.resources h1 {
+    font-weight: 700;
+    font-size: 4rem;
+  }
+
+  .resources p {
+    font-size: 1.6rem;
+  }
+  
+  .resources .strategies {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 95%;
+    gap: 1rem;
+  }
+  
+  .resources .strategies .strategy {
+    width: 20rem;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .resources .strategies .strategy p{
+    font-size: 1.4rem;
+  }
+  
+  .resources .strategies .strategy span {
+    font-weight: 700;
+  }
+  
+  .resources .strategies .strategy h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    cursor: pointer;
+  }
+  
+  .resources .strategies .strategy img {
+    width: 150%;
+    cursor: pointer;
+  }
+  /* resources css ends here */
+
+
+  /* footer css starts here */
+  #footer {
+    min-height: 10vh;
+    padding: 1rem 7rem;
+    gap: 4rem;
+  }
+  
+  #footer hr {
+    color: var(--bs-gray-dark);
+    height: 0rem;
+    border: 0.04px solid #80808028;
+    margin: 2rem;
+  }
+  
+  .footer-top {
+    padding: 1rem 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: fit-content;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: 800;
+    margin-bottom: -25rem;
+  }
+  
+  #footer .footer-list {
+    display: flex;
+    flex-direction: column;
+    width: 12rem;
+  }
+  
+  #footer .footer-list p {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  
+  #footer .footer-list ul li {
+    list-style: none;
+    padding: 0.3rem 0;
+  }
+  
+  #footer .footer-list ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+  }
+  
+  #footer .footer-top .infolinks {
+    display: flex;
+  }
+  
+  #footer .footer-list ul li a:hover {
+    color: var(--bs-warning);
+  }
+  
+  #footer .footer-list h3 {
+    font-weight: 800;
+    padding-bottom: 1rem;
+  }
+  
+  #footer .footer-list input {
+    padding: 0.2rem 1rem;
+    height: 3rem;
+    width: 18rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1px solid #5675925e;
+    color: var(--bs-blue);
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  
+  #footer .footer-list input::-webkit-inner-spin-button,
+  #footer .footer-list input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  #footer .footer-list input::placeholder {
+    color: var(--bs-blue);
+    font-weight: 600;
+    font-size: 1.15rem;
+    opacity: 0.5;
+  }
+  
+  #footer .footer-list input:focus {
+    outline: 5px solid #ff880067;
+    border: 1px solid #df695188;
+  }
+  
+  #footer .form {
+    width: 25rem;
+    height: fit-content;
+  }
+  
+  #footer .form .sign-up {
+    width: 10rem;
+    padding: 1rem;
+    border: orange;
+    background-color: orange;
+    border-radius: 4px;
+    height: 40px;
+    width: 20rem;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+    /* footer css ends here */
+  
